@@ -39,7 +39,7 @@ The fourth function turns the polyline object into a series of smooth Bezier cur
 
 By offsetting the x-position of the "valleys" (the space in between the "letter" strokes) slightly, the fifth function creates an Italics effect.
 
-### makeDJTSig
+## makeDJTSig
 
 This function is the official DJT signature generator function. It ensures that the first letter is always tall. Additionally, for tall letters, it splits up each line segment (of which there are usually 2 per letter) into 2 randomly-placed smaller segments, creating some more significant variation in the taller letters.
 
@@ -48,3 +48,13 @@ With these modifications in place, the DJTSig generator comes extremely close to
 ![Donald Trump's official presidential signature, preceeded by the word "Sincerely," and proceeded by the name "Donald J. Trump" in print](https://github.com/yonatanrozin/Donald-Trump-Signature-Generator/blob/main/Images/DJTSig_official.jpeg)
 
 ![A randomly-generated asemic line, made to resemble Donald Trump's official signature](https://github.com/yonatanrozin/Donald-Trump-Signature-Generator/blob/main/Images/DJTSig_close.jpeg)
+
+## extraSig
+
+To extrapolate on these random-yet-predicable patterns seen in DJT's signature, the extraSig function introduces a variable called attOffset, or "attribute offset". All integer variables are incremented by ±attOffset. The one exception to this is the starting and ending y-position of each letter, to maintain any semblance of order.
+
+Setting attOffset to 0 will result in the normal signature generator, while setting it to progressively larger numbers will begin to gradually distort the resulting signature. For comparison, the notebook shows the distorted and original versions side-by-side.
+
+Setting attOffset to a value of 3 has been found to create a randomly-generated signature that more closely resembles Donald Trump's pre-office signature from 2015. For reference, here's a side-by-side comparison of his signature before and after taking office:
+
+![A side-by-side comparison of 2 of Donald Trump's signatures. The first, on the left, is more distorted than his current version, and the words "Donald Trump, September 2015" are printed underneath. The second, on the right, resembles his official signature, and the words "Donald Trump signs Keystone Pipeline executive order January 2017" are written underneath.](https://github.com/yonatanrozin/Donald-Trump-Signature-Generator/blob/main/Images/DJTSig_Chronology.jpeg)
