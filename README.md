@@ -1,6 +1,6 @@
 # Donald-Trump-Signature-Generator
 
-A Python program written in Jupyter Notebook that produces randomly-generated asemic writing modeled after Donald Trump's official presidential signature. Access the Jupyter Notebook [here](https://colab.research.google.com/drive/11KM2JbkzJXKvv3h4X4BxGzJyqZeg3zX6)
+A Python program written in Jupyter Notebook that produces randomly-generated asemic writing modeled after Donald Trump's official presidential signature. Access the Jupyter Notebook [here](https://colab.research.google.com/drive/11KM2JbkzJXKvv3h4X4BxGzJyqZeg3zX6). Go to Runtime->Run all to run all the cells and scroll through the notebook to see the various iterations.
 
 ## DJTSig Introduction
 
