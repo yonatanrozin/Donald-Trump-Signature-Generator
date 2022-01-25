@@ -58,3 +58,7 @@ Setting attOffset to 0 will result in the normal signature generator, while sett
 Setting attOffset to a value of 3 has been found to create a randomly-generated signature that more closely resembles Donald Trump's pre-office signature from 2015. For reference, here's a side-by-side comparison of his signature before and after taking office:
 
 ![A side-by-side comparison of 2 of Donald Trump's signatures. The first, on the left, is more distorted than his current version, and the words "Donald Trump, September 2015" are printed underneath. The second, on the right, resembles his official signature, and the words "Donald Trump signs Keystone Pipeline executive order January 2017" are written underneath.](https://github.com/yonatanrozin/Donald-Trump-Signature-Generator/blob/main/Images/DJTSig_Chronology.jpeg)
+
+And finally, here's the before/after style replicated in the generator:
+
+![Another side-by-side comparison of 2 procedurally-generated signatures. The one on the left is more distorted than the one on the right, similar to the signatures in the previous photo.](https://github.com/yonatanrozin/Donald-Trump-Signature-Generator/blob/main/Images/DJTSig_extrasig.jpeg)
