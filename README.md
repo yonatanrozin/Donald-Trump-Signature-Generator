@@ -19,26 +19,6 @@ My goal was to emulate these patterns as accurately as possible, and perhaps ext
 
 The Jupyter Notebook consists of a series of functions that randomly generate zigzag lines. As the functions are expanded and modified, the resulting lines gradually begin to resemble the original signature. The notebook uses the Python Flat library, which allows for graphics to be generated and embedded in the Jupyter Notebook. Additionally, the notebook uses Allison Parrish's Bezmerizing library's polyLine object, which receives a list of coordinate pairs and returns a series of connected lines.
 
-#### makeZigZag1
-
-The first function receives 3 integer arguments, corresponding to the length and height of the total shape in mm and the number of line segments it will contain. The function predictably creates the desired number of line segments in the desired zigzag pattern to fill up the specified space.
-
-#### makeZigZag2
-
-The second function introduces variable, randomly chosen letter heights.
-
-#### makeZigZag3
-
-The third function randomly chooses from a list of 3 possible letter heights (low, medium, tall), with probabilities taken from the model signature (15/20 low, 2/20 medium, 3/20 high).
-
-#### makeZigZag4
-
-The fourth function turns the polyline object into a series of smooth Bezier curves, which much more closely resemble human handwriting. The sharp edges of the letters are also rounded out. Additionally, the function introduces a slight variation in the y-position of the line segments, so they don't start and end at exactly the same height every time.
-
-#### makeZigZag5
-
-By offsetting the x-position of the "valleys" (the space in between the "letter" strokes) slightly, the fifth function creates an Italics effect.
-
 ## makeDJTSig
 
 This function is the official DJT signature generator function. It ensures that the first letter is always tall. Additionally, for tall letters, it splits up each line segment (of which there are usually 2 per letter) into 2 randomly-placed smaller segments, creating some more significant variation in the taller letters.
